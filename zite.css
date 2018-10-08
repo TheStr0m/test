@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+}
+
+
 .headerdiv{
     background-position-y: -10px;
     height: 200px;
