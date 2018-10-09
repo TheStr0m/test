@@ -18,9 +18,7 @@ body {
 
 
 .topnav{
-    background-image: url(new-york-city-skyline-panorama-m.jpg);
     background-position-y: 300px;
-    color: grey;
     overflow: hidden;
     text-align: center;
     justify-content: center;
@@ -34,7 +32,6 @@ header{
     text-align: center;
     font-size: 3em;
     justify-content: center;
-    display: flex;
 
 }
 
@@ -43,11 +40,11 @@ header{
     color: #000000;
     padding: 14px 16px;
     text-decoration: none;
-    margin: 0px 206px;
+    margin: 0px 50px;
 }
 
 .topnav a:hover{
-    background-color: whitesmoke;
+    background-color: grey;
     color: black;
 }
 
