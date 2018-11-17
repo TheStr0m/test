@@ -1,0 +1,22 @@
+div{
+    background-color: lightblue;
+    height: 400px;
+    width: 400px;
+    float: left;
+    text-align: center;
+    border: 1px solid;
+}
+
+canvas{
+    float: left;
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+
+}
+b{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+}

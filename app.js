@@ -2,7 +2,8 @@ window.onload=function() {
     canv=document.getElementById("gc");
     ctx=canv.getContext("2d");
     document.addEventListener("keydown",keyPush);
-    setInterval(game,1000/10);
+    document.querySelector('#score').innerHTML = score;
+    setInterval(game,1000/15);
 }
 px=py=10;
 gs=tc=20;
@@ -10,6 +11,8 @@ ax=ay=15;
 xv=yv=0;
 trail=[];
 tail = 2;
+score = 0;
+highscore = 0;
 function game() {
     px+=xv;
     py+=yv;
@@ -21,7 +24,7 @@ function game() {
     }
     if(py<0) {
         py= tc-1;
-    }
+    }   
     if(py>tc-1) {
         py= 0;
     }
@@ -33,6 +36,14 @@ function game() {
         ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
         if(trail[i].x==px && trail[i].y==py) {
             tail = 2;
+            if (score > highscore){
+                highscore = score;
+                document.querySelector('#highscore').innerHTML = score;
+            }
+            score = 0;
+            document.querySelector('#score').innerHTML = score;
+
+            
         }
     }
     trail.push({x:px,y:py});
@@ -41,6 +52,8 @@ function game() {
     }
  
     if(ax==px && ay==py) {
+        score++;
+        document.querySelector('#score').innerHTML = score;
         tail++;
         ax=Math.floor(Math.random()*tc);
         ay=Math.floor(Math.random()*tc);
@@ -51,16 +64,37 @@ function game() {
 function keyPush(evt) {
     switch(evt.keyCode) {
         case 37:
-            xv=-1;yv=0;
-            break;
+            if (xv == 1){
+                break;
+            }
+            else{
+                xv=-1;yv=0;
+                break;
+            }
+
         case 38:
-            xv=0;yv=-1;
-            break;
+            if (yv == 1){
+                break;
+            }
+            else{
+                xv=0;yv=-1;
+                break;
+            }
         case 39:
-            xv=1;yv=0;
-            break;
+            if (xv == -1){
+                break;
+            }
+            else{
+                xv=1;yv=0;
+                break;
+            }
         case 40:
+            if (yv == -1){
+                break;
+            }
+            else{
             xv=0;yv=1;
             break;
+            }
     }
 }
