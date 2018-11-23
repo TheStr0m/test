@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <script src="app.js"></script>
+    <title>Snake</title>
+    <link rel="shortcut icon" href="snake.ico"/>
+</head>
+
+<body>
+    <div class="grid1">
+
+    </div>
+
+    <center>
+        <p id="namebox"></p>
+        <div id="game">
+            <div id="highscorebox">
+                <b>Highscore:</b>
+                <p id="highscore"></p>
+            </div>
+            <canvas id="gc" width="400" height="400"></canvas>      
+            <div id="scorebox">
+                <b>Score:</b>
+                <p id="score"></p>
+            </div>      
+        </div>   
+    </center>
+
+
+
+    <button onclick="nameChange()">ChangeName</button>
+    <button onclick="resetGame()">Reset</button>
+
+
+
+</body>
