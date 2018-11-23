@@ -1,22 +1,67 @@
-div{
-    background-color: lightblue;
-    height: 400px;
-    width: 400px;
-    float: left;
-    text-align: center;
-    border: 1px solid;
+body{
+    background-image: url(background1.png);
+    background-size: 100%;
 }
 
-canvas{
-    float: left;
+
+b{
+    font-family: 'VT323', monospace;
+    color: black;
+    font-size: 5em;
 }
 
 p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5em;
+    font-size: 10em;
+    font-family: 'VT323', monospace;
+    margin-top: 50px;
+
 
 }
-b{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5em;
+
+div#game{
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 900px;
+    width: 1050px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: transparent;
+    justify-content: center;
+}
+
+div#game canvas{
+    padding: 0;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#scorebox{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 400px;
+    width: 325px;
+}
+
+#highscorebox{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 400px;
+    width: 325px;
 }
