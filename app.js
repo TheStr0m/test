@@ -109,6 +109,41 @@ function game() {
 }
 function keyPush(evt) {
     switch(evt.keyCode) {
+            
+        case 65:
+            if (xv == 1){
+                break;
+            }
+            else{
+                xv=-1;yv=0;
+                break;
+            } 
+        case 87:
+            if (yv == 1){
+                break;
+            }
+            else{
+                xv=0;yv=-1;
+                break;
+            }
+        case 68:
+            if (xv == -1){
+                break;
+            }
+            else{
+                xv=1;yv=0;
+                break;
+            }
+        case 83:
+            if (yv == -1){
+                break;
+            }
+            else{
+            xv=0;yv=1;
+            break;
+            }  
+
+            
         case 37:
             if (xv == 1){
                 break;
