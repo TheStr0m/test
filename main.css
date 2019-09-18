@@ -66,3 +66,7 @@ div#game canvas{
     height: 400px;
     width: 325px;
 }
+
+.note{
+    position: absolute;
+    bottom: 0px;
